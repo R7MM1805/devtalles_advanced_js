@@ -1,6 +1,8 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
+import { promiseComponent } from './src/concepts/03-promises'
+import { promiseRaceComponent } from './src/concepts/04-promise-race'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -15,3 +17,8 @@ document.querySelector('#app').innerHTML = `
     </div>
   </div>
 `
+
+const element = document.querySelector('.card');
+// promiseRaceComponent(element);
+
+promiseComponent(element);
