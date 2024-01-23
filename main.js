@@ -1,7 +1,7 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
-import { forAwaitComponent } from './src/concepts/08-for-await'
+import { generatorAsyncComponent } from './src/concepts/10-generator-async'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -18,4 +18,4 @@ document.querySelector('#app').innerHTML = `
 `
 
 const element = document.querySelector('.card');
-forAwaitComponent(element);
+generatorAsyncComponent(element);

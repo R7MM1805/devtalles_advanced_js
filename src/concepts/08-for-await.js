@@ -33,7 +33,7 @@ const getHeroesAsync = ( heroIds ) => {
 const getHeroAsync = async(id) => {
 
     await new Promise(( resolve ) => {
-        setTimeout(() => resolve(), 1000)
+        setTimeout(() => resolve(), 2000)
     });
 
     return heroes.find( hero => hero.id === id );
